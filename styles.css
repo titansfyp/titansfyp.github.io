@@ -55,3 +55,13 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    nav a, nav > div > button:hover {
+        transition: all 0.3s ease-in;
+    }
+
+    nav a:hover, nav > div > button:hover {
+        background-color: #001F3F;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
