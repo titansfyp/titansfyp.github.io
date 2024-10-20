@@ -12,44 +12,44 @@
    <body class="bg-gray-100">
       <div class="flex">
          <!-- Sidebar -->
-         <div class="bg-[#3096FF] text-white w-64 min-h-screen flex flex-col w-[20%]">
+         <div class="bg-[#3096FF] text-white max-lg:text-sm max-lg:w-[225px] w-[295px] shrink-0 h-screen flex flex-col">
             <div class="flex items-center justify-center">
                <div class="text-center">
                   <img src="resources/logo.png" alt="">
                </div>
             </div>
-            <div class="flex items-center px-6 mt-6 relative">
-                <div class="flex items-center mb-6 relative">
-                    <img alt="Profile picture" class="rounded-md w-16 h-16" height="80" src="resources/female- avatar.webp" width="50"/>
-                    <div class="ml-4">
-                       <div class="text-white font-bold">
-                          Miss. Mahwish W.
-                       </div>
-                       <div class="text-blue-600 bg-[#D9D9D9] w-fit rounded-xl px-2">
-                          Facility
-                       </div>
-                    </div>
-                    <div class="h-4 w-4 rounded-full bg-green-600 absolute bottom-[-4px] left-14"></div>
+            <div class="flex items-center px-4 max-lg:px-2 mt-6 relative">
+               <div class="flex items-center mb-6 relative">
+                   <img alt="Profile picture" class="rounded-md w-16 h-16 max-lg:w-12 max-lg:h-12" src="resources/female- avatar.webp" width="50"/>
+                   <div class="ml-4 max-lg:text-sm">
+                      <div class="text-white ">
+                         Miss. Mahwish W.
+                      </div>
+                      <div class="text-blue-600 text-sm bg-[#D9D9D9] w-fit rounded-xl px-2 max-lg:px-1">
+                         Facility
+                      </div>
+                   </div>
+                   <div class="h-4 w-4 rounded-full bg-green-600 absolute bottom-[-4px] left-14 max-lg:left-[40px]"></div>
+                </div>
+              <div class="absolute top-4 right-6 max-lg mt-2 lg:mr-2">
+                 <button class="text-white focus:outline-none" onclick="document.getElementById('dropdown').classList.toggle('hidden')">
+                 <i class="fas fa-ellipsis-v lg:fa-lg">
+                 </i>
+                 </button>
+                 <div class="hidden bg-[#1D242E] text-black rounded shadow-lg mt-2 w-36 absolute right-0" id="dropdown">
+                    <a class="block text-white px-4 py-2 hover:bg-gray-200" href="#">
+                       <i class="fas fa-user mr-2"></i>
+                    My Profile
+                    </a>
+                    <a class="text-[#F0483E] block px-4 py-2 hover:bg-gray-200" href="#">
+                       <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                    </a>
                  </div>
-               <div class="absolute top-0 right-6 mt-2 mr-2">
-                  <button class="text-white focus:outline-none" onclick="document.getElementById('dropdown').classList.toggle('hidden')">
-                  <i class="fas fa-ellipsis-v">
-                  </i>
-                  </button>
-                  <div class="hidden bg-[#1D242E] text-black rounded shadow-lg mt-2 w-36 absolute right-0" id="dropdown">
-                     <a class="block text-white px-4 py-2 hover:bg-gray-200" href="#">
-                        <i class="fas fa-user mr-2"></i>
-                     My Profile
-                     </a>
-                     <a class="text-[#F0483E] block px-4 py-2 hover:bg-gray-200" href="#">
-                        <i class="fas fa-sign-out-alt"></i>
-                     Logout
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <nav class="mt-10">
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="index.html">
+              </div>
+           </div>
+            <nav class="mt-8 text-md flex flex-col gap-2">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="index.html">
                <i class="fas fa-tachometer-alt mr-3">
                </i>
                <span>
@@ -57,7 +57,7 @@
                </span>
                </a>
                <div class="relative">
-                <button class="flex items-center py-2 px-8 w-full text-left hover:bg-blue-700 focus:outline-none" onclick="document.getElementById('studentsDropdown').classList.toggle('hidden')">
+                <button class="flex items-center py-2 px-8 w-full text-left hover:bg-[#001F3F] focus:outline-none" onclick="document.getElementById('studentsDropdown').classList.toggle('hidden')">
                  <i class="fas fa-users mr-3">
                  </i>
                  <span>
@@ -67,15 +67,15 @@
                  </i>
                 </button>
                 <div class="hidden" id="studentsDropdown">
-                 <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="FYP-I.html">
+                 <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="FYP-I.html">
                   FYP - I
                  </a>
-                 <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="FYP-II.html">
+                 <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="FYP-II.html">
                   FYP - II
                  </a>
                 </div>
                </div>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="Proposals.html">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="Proposals.html">
                <i class="fas fa-file-alt mr-3">
                </i>
                <span>
@@ -83,8 +83,8 @@
                </span>
                </a>
                <div class="relative">
-                  <button class="flex items-center py-2 px-8 w-full text-left hover:bg-blue-700 focus:outline-none" onclick="document.getElementById('evalDropdown').classList.toggle('hidden')">
-                   <i class="fas fa-users mr-3">
+                  <button class="flex items-center py-2 px-8 w-full text-left hover:bg-[#001F3F] focus:outline-none" onclick="document.getElementById('evalDropdown').classList.toggle('hidden')">
+                   <i class="fas fa-pen mr-3">
                    </i>
                    <span>
                     Evaluations
@@ -93,22 +93,22 @@
                    </i>
                   </button>
                   <div class="" id="evalDropdown">
-                   <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="Evaluation_FYP-I.html">
+                   <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="Evaluation_FYP-I.html">
                     FYP - I
                    </a>
-                   <a class="block py-2 pl-16 pr-8 bg-blue-700" href="Evaluation_FYP-II.html">
+                   <a class="block pl-16 pr-8 selected" href="Evaluation_FYP-II.html">
                     FYP - II
                    </a>
                   </div>
                  </div>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-cog mr-3">
                </i>
                <span>
                Settings
                </span>
                </a>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-bell mr-3">
                </i>
                <span>
@@ -118,7 +118,7 @@
                01
                </span>
                </a>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-question-circle mr-3">
                </i>
                <span>
@@ -126,7 +126,7 @@
                </span>
                </a>
             </nav>
-            <div class="mt-auto bg-[#001F3F] text-sm flex justify-between px-6 py-2 text-white/70">
+            <div class="mt-auto bg-[#001F3F] text-xs flex justify-between px-6 py-2 text-white/70">
                <p>
                   Developed by <a href="#">Titans</a> © FA21
                </p>
@@ -136,7 +136,7 @@
             </div>
          </div>
          <!-- Main Content -->
-         <div class="flex-1 p-10">
+         <div class="flex-1 p-10 max-lg:p-6">
             <div class="text-right">
                 <div class="flex items-center justify-end gap-2">
                    <p class="h-4 w-4 bg-[#FED600] rounded-full"></p>
@@ -157,7 +157,7 @@
                     </div>
                     
                 </div>
-                <table class="w-full mt-6 mb-8 border-collapse border border-gray-400">
+                <table class="max-lg:text-sm w-full mt-6 mb-8 border-collapse border border-gray-400">
                     <thead class="border-gray-400">
                        <tr>
                           <th class=" p-2 text-left">
@@ -259,7 +259,7 @@
                    </div>
                    
                </div>
-               <table class="w-full border-collapse mt-6 border border-gray-400">
+               <table class="max-lg:text-sm w-full border-collapse mt-6 border border-gray-400">
                 <thead>
                    <tr class="">
                       <th class="p-2 text-left">

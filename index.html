@@ -10,30 +10,30 @@
       <link rel="stylesheet" href="styles.css">
    </head>
    <body class="bg-[#F5F5F5]">
-      <div class="flex">
+      <div class="flex max-h-full">
          <!-- Sidebar -->
-         <div class="bg-[#3096FF] text-white w-64 min-h-screen flex flex-col w-[20%]">
+         <div class="bg-[#3096FF] text-white max-lg:text-sm max-lg:w-[225px] w-[295px] shrink-0 h-screen flex flex-col">
             <div class="flex items-center justify-center">
                <div class="text-center">
                   <img src="resources/logo.png" alt="">
                </div>
             </div>
-            <div class="flex items-center px-6 mt-6 relative">
+            <div class="flex items-center px-4 max-lg:px-2 mt-6 relative">
                 <div class="flex items-center mb-6 relative">
-                    <img alt="Profile picture" class="rounded-md w-16 h-16" height="80" src="resources/female- avatar.webp" width="50"/>
-                    <div class="ml-4">
-                       <div class="text-white font-bold">
+                    <img alt="Profile picture" class="rounded-md w-16 h-16 max-lg:w-12 max-lg:h-12" src="resources/female- avatar.webp" width="50"/>
+                    <div class="ml-4 max-lg:text-sm">
+                       <div class="text-white ">
                           Miss. Mahwish W.
                        </div>
-                       <div class="text-blue-600 bg-[#D9D9D9] w-fit rounded-xl px-2">
+                       <div class="text-blue-600 text-sm bg-[#D9D9D9] w-fit rounded-xl px-2 max-lg:px-1">
                           Facility
                        </div>
                     </div>
-                    <div class="h-4 w-4 rounded-full bg-green-600 absolute bottom-[-4px] left-14"></div>
+                    <div class="h-4 w-4 rounded-full bg-green-600 absolute bottom-[-4px] left-14 max-lg:left-[40px]"></div>
                  </div>
-               <div class="absolute top-0 right-6 mt-2 mr-2">
+               <div class="absolute top-4 right-6 max-lg mt-2 lg:mr-2">
                   <button class="text-white focus:outline-none" onclick="document.getElementById('dropdown').classList.toggle('hidden')">
-                  <i class="fas fa-ellipsis-v">
+                  <i class="fas fa-ellipsis-v lg:fa-lg">
                   </i>
                   </button>
                   <div class="hidden bg-[#1D242E] text-black rounded shadow-lg mt-2 w-36 absolute right-0" id="dropdown">
@@ -48,8 +48,8 @@
                   </div>
                </div>
             </div>
-            <nav class="mt-10">
-               <a class="flex items-center py-2 px-8 bg-blue-700" href="index.html">
+            <nav class="mt-8 text-md flex flex-col gap-2">
+               <a class="flex items-center px-8 selected" href="index.html">
                <i class="fas fa-tachometer-alt mr-3">
                </i>
                <span>
@@ -57,7 +57,7 @@
                </span>
                </a>
                <div class="relative">
-                <button class="flex items-center py-2 px-8 w-full text-left hover:bg-blue-700 focus:outline-none" onclick="document.getElementById('studentsDropdown').classList.toggle('hidden')">
+                <button class="flex items-center py-2 px-8 w-full text-left hover:bg-[#001F3F] focus:outline-none" onclick="document.getElementById('studentsDropdown').classList.toggle('hidden')">
                  <i class="fas fa-users mr-3">
                  </i>
                  <span>
@@ -67,15 +67,15 @@
                  </i>
                 </button>
                 <div class="hidden" id="studentsDropdown">
-                 <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="FYP-I.html">
+                 <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="FYP-I.html">
                   FYP - I
                  </a>
-                 <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="FYP-II.html">
+                 <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="FYP-II.html">
                   FYP - II
                  </a>
                 </div>
                </div>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="Proposals.html">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="Proposals.html">
                <i class="fas fa-file-alt mr-3">
                </i>
                <span>
@@ -83,8 +83,8 @@
                </span>
                </a>
                <div class="relative">
-                  <button class="flex items-center py-2 px-8 w-full text-left hover:bg-blue-700 focus:outline-none" onclick="document.getElementById('evalDropdown').classList.toggle('hidden')">
-                   <i class="fas fa-users mr-3">
+                  <button class="flex items-center py-2 px-8 w-full text-left hover:bg-[#001F3F] focus:outline-none" onclick="document.getElementById('evalDropdown').classList.toggle('hidden')">
+                   <i class="fas fa-pen mr-3">
                    </i>
                    <span>
                     Evaluations
@@ -93,22 +93,22 @@
                    </i>
                   </button>
                   <div class="hidden" id="evalDropdown">
-                   <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="Evaluation_FYP-I.html">
+                   <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="Evaluation_FYP-I.html">
                     FYP - I
                    </a>
-                   <a class="block py-2 pl-16 pr-8 hover:bg-blue-700" href="Evaluation_FYP-II.html">
+                   <a class="block py-2 pl-16 pr-8 hover:bg-[#001F3F]" href="Evaluation_FYP-II.html">
                     FYP - II
                    </a>
                   </div>
                  </div>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-cog mr-3">
                </i>
                <span>
                Settings
                </span>
                </a>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-bell mr-3">
                </i>
                <span>
@@ -118,7 +118,7 @@
                01
                </span>
                </a>
-               <a class="flex items-center py-2 px-8 hover:bg-blue-700" href="#">
+               <a class="flex items-center py-2 px-8 hover:bg-[#001F3F]" href="#">
                <i class="fas fa-question-circle mr-3">
                </i>
                <span>
@@ -126,7 +126,7 @@
                </span>
                </a>
             </nav>
-            <div class="mt-auto bg-[#001F3F] text-sm flex justify-between px-6 py-2 text-white/70">
+            <div class="mt-auto bg-[#001F3F] text-xs flex justify-between px-6 py-2 text-white/70">
                <p>
                   Developed by <a href="#">Titans</a> © FA21
                </p>
@@ -136,7 +136,7 @@
             </div>
          </div>
          <!-- Main Content -->
-         <div class="flex-1 p-10">
+         <div class="flex-1 p-8">
             <div class="flex justify-between items-center">
                <h1 class="text-[32px] font-bold">
                   Welcome!
@@ -154,141 +154,140 @@
                   </p>
                </div>
             </div>
-            <h2 class="text-[24px] font-bold mt-6">
-               Dashboard
-            </h2>
-            <p class="text-gray-600">
-               A quick data overview.
-            </p>
-            <div class="grid grid-cols-3 gap-24 mt-6 px-8 min-h-[180px]">
-               <div class="rounded-lg shadow border-2 border-black w-[100%]">
+            <div class="px-2">
+               <h2 class="text-[24px] font-bold mt-4">
+                  Dashboard
+               </h2>
+               <p class="text-gray-600">
+                  A quick data overview.
+               </p>
+            </div>
+            <div class="flex mt-6 px-8 gap-16 w-full">
+               <div class="rounded-lg shadow border-2 border-black w-[25%] h-[180px]">
                   <div class="flex flex-col items-center justify-between h-full pt-4">
-                     <i class="fas fa-users text-blue-500 text-4xl">
-                     </i>
+                     <img src="resources/Face Twinkle.svg" class="h-[50px] w-[50px]" alt="">
                      <div class="flex flex-col">
-                        <h3 class="text-2xl font-bold">
+                        <h3 class="text-xl max-lg:text-base font-bold">
                            FYP - I Groups
                         </h3>
-                        <p class="text-md text-center">
+                        <p class="text-sm text-center">
                            3/3
                         </p>
                      </div>
-                     <button class="w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
+                     <a href="FYP-I.html" class="text-sm w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
                         View Details »
-                     </button>
+                     </a>
                   </div>
                </div>
-               <div class="rounded-lg shadow border-2 border-black w-[100%]">
+               <div class="rounded-lg shadow border-2 border-black w-[25%] h-[180px]">
                   <div class="flex flex-col items-center justify-between h-full pt-4">
-                     <i class="fas fa-users text-blue-500 text-4xl">
-                     </i>
+                     <img src="resources/Users Icon.svg" class="h-[40px] w-[40px]" alt="">
                      <div class="flex flex-col">
-                        <h3 class="text-2xl font-bold">
+                        <h3 class="text-xl max-lg:text-base font-bold">
                            FYP - II Groups
                         </h3>
-                        <p class="text-md text-center">
+                        <p class="text-sm text-center">
                            2/3
                         </p>
                      </div>
-                     <button class="w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
+                     <a href="FYP-II.html" class="text-sm w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
                         View Details »
-                     </button>
+                     </a>
                   </div>
                </div>
-               <div class="rounded-lg shadow border-2 border-black w-[100%]">
+               <div class="rounded-lg shadow border-2 border-black w-[25%] h-[180px]">
                   <div class="flex flex-col items-center justify-between h-full pt-4">
-                     <i class="fas fa-users text-blue-500 text-4xl">
-                     </i>
+                     <img src="resources/Book icon.svg" class="h-[40px] w-[40px]" alt="">
                      <div class="flex flex-col">
-                        <h3 class="text-2xl font-bold">
+                        <h3 class="text-xl max-lg:text-base text-center font-bold">
                            Proposals To Review
                         </h3>
-                        <p class="text-md text-center">
+                        <p class="text-sm text-center">
                            <span class="font-bold">2</span> Assigned
                         </p>
                      </div>
-                     <button class="w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
+                     <a href="Proposals.html" class="text-sm w-full bg-[#3096FF]/30 text-black py-1 px-4 rounded text-right">
                         View Details »
-                     </button>
+                     </a>
                   </div>
                </div>
                
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-y-2 gap-x-6 mt-6">
-               <div class="border-2 border-black/30 rounded-sm">
+            <div class="grid grid-cols-2  gap-x-10 mt-4">
+               <div class="border-2 border-black/30 rounded-sm h-[150px] flex flex-col">
                   <div class="flex py-3 px-6 justify-between items-center border-b-2 border-black/30">
-                     <h3 class="text-lg font-bold">
+                     <h3 class="text-base font-bold max-lg:text-sm">
                         FYP - I Proposals Submitted
                      </h3>
-                     <a class="text-[#1D242E]" href="#">
+                     <a class="text-[#1D242E] text-sm max-lg:text-xs" href="#">
                      Go to Proposals »
                      </a>
                   </div>
-                  <div class="flex justify-between mt-4 px-6 py-2">
-                     <div class="text-center">
-                        <p class="text-2xl font-bold">
+                  <div class="flex justify-between px-6 py-2 grow">
+                     <div class="text-center flex flex-col justify-center">
+                        <p class="text-xl max-lg:text-lg font-bold">
                            2
                         </p>
-                        <p>
+                        <p class="text-sm max-lg:text-xs">
                            Submitted
                         </p>
                      </div>
-                     <div class="text-center">
-                        <p class="text-2xl font-bold">
+                     <div class="text-center flex flex-col justify-center">
+                        <p class="text-xl max-lg:text-lg font-bold">
                            1
                         </p>
-                        <p>
+                        <p class="text-sm max-lg:text-xs">
                            Accepted
                         </p>
                      </div>
-                     <div class="text-center">
-                        <p class="text-2xl font-bold">
+                     <div class="text-center flex flex-col justify-center">
+                        <p class="text-xl max-lg:text-lg font-bold">
                            1
                         </p>
-                        <p>
+                        <p class="text-sm max-lg:text-xs">
                            Rejected
                         </p>
                      </div>
                   </div>
                </div>
-               <div class="border-2 border-black/30 rounded-sm">
+               <div class="border-2 border-black/30 rounded-sm flex flex-col h-[150px] ">
                   <div class="flex justify-between items-center px-6 py-3 border-b-2 border-black/30">
-                     <h3 class="text-lg font-bold">
+                     <h3 class="text-base max-lg:text-sm font-bold">
                         Next Important Date
                      </h3>
-                     <a class="text-[#1D242E]" href="#">
+                     <a class="text-[#1D242E] max-lg:text-xs text-sm" href="#">
                      Go to Alerts »
                      </a>
                   </div>
-                  <div class="flex justify-between mt-4 px-6 py-2">
-                     <div class="text-center">
-                        <p class="text-2xl font-bold">
+                  <div class="flex justify-between px-6 py-2 grow">
+                     <div class="text-center flex flex-col justify-center">
+                        <p class="text-xl max-lg:text-lg font-bold">
                            24 - December
                         </p>
-                        <p>
+                        <p class="text-sm max-lg:text-xs">
                            FYP - I Evaluation
                         </p>
                      </div>
-                     <div class="text-center">
-                        <p class="text-2xl font-bold">
+                     <div class="text-center flex flex-col justify-center">
+                        <p class="text-xl max-lg:text-lg font-bold">
                            28 - October
                         </p>
-                        <p>
+                        <p class="text-sm max-lg:text-xs">
                            FYP - II Pre-Evaluation
                         </p>
                      </div>
                   </div>
                </div>
-               <div class="rounded-sm mt-6 border-2 border-black/30">
+               <div class="rounded-sm mt-6 border-2 border-black/30 flex flex-col h-[150px] self-start">
                   <div class="flex justify-between items-center px-6 py-3 border-b-2 border-black/30">
-                     <h3 class="text-lg font-bold">
+                     <h3 class="text-base max-lg:text-sm font-bold">
                         Role Assignment
                      </h3>
-                     <a class="text-[#1D242E]" href="#">
+                     <a class="text-[#1D242E] text-sm max-lg:text-xs" href="#">
                      Go to Alerts »
                      </a>
                   </div>
-                  <p class="mt-4 text-xl px-6 py-2 font-bold">
+                  <p class="text-xl max-lg:text-base px-6 py-2 font-bold flex flex-col justify-center grow">
                      You have been Assigned as FYP - I Evaluation Co-ordinator
                   </p>
                </div>
